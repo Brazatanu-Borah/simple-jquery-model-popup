@@ -1,0 +1,111 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: Tahoma, Verdana, sans-serif;
+   transition: all 0.2s linear;
+   font-size: 20px;
+   box-sizing: border-box;
+}
+
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   width: 100vw;
+   background-color: #21D4FD;
+   background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+
+}
+
+#open {
+   height: 3rem;
+   width: 10rem;
+   background-color: #fff;
+   border: none;
+   font-size: 1.5rem;
+   color: #333;
+   letter-spacing: 0.2rem;
+   cursor: pointer;
+   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+
+#open:hover {
+   letter-spacing: 0.3rem;
+   opacity: 0.8;
+}
+
+#modal-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   width: 100vw;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+   transform: scale(0);
+}
+
+#modal-container .modal {
+   height: 25rem;
+   width: 20rem;
+   margin: 0 1rem;
+   padding: 1rem;
+   background-color: #fff;
+   border-radius: 0.5rem;
+   text-align: center;
+   position: relative;
+}
+
+#modal-container .modal .fa-heart {
+   font-size: 6rem;
+   color: #7326b3;
+   padding-bottom: 3rem;
+   margin: 0.5rem;
+   text-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3),
+      2rem 1rem 0 #ccc,
+      -2rem 1rem 0 #000;
+}
+
+#modal-container .modal h3 {
+   color: #333;
+   font-size: 1.5rem;
+}
+
+#modal-container .modal p {
+   color: #666;
+   margin: 1rem 0;
+}
+
+#modal-container .modal button {
+   display: inline-block;
+   padding: 0.5rem;
+   width: 8rem;
+   color: #fff;
+   background-color: #32417F;
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+
+#modal-container .modal button:hover {
+   opacity: 0.8;
+}
+
+#modal-container .modal .fa-times {
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+   font-size: 1.4rem;
+   color: #333;
+}
+#modal-container .modal .fa-times:hover {
+   cursor: pointer;
+   color: #777;
+}
